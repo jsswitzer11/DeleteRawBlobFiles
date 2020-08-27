@@ -44,7 +44,7 @@ namespace DeleteRawBlobFiles
 
             try
             {
-                // Delete the specified container and handle the exception.
+                // Delete any files, but no folders in the specified container
                 foreach (var item in blobItem.Results)
                 {
                     if (item.GetType() == typeof(CloudBlockBlob))
